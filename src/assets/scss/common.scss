@@ -1,0 +1,53 @@
+.common {
+  &__button {
+    padding: 13px 18px;
+
+    display: inline-flex;
+    
+    align-items: center;
+
+    background-color: $defaultBlue;
+
+    border-radius: 60px;
+
+    box-shadow: 4px 20px 32px $commonButtonShadow;
+
+    &_left {
+        justify-content: flex-start;
+    }
+
+    &_right {
+        justify-content: flex-end;
+
+        padding-left: 33px;
+
+        .common__button-text {
+            margin-right: 10px;
+        }
+    }
+  }
+
+  &__button-text {
+    font-size: 18px;
+    font-weight: 500;
+
+    line-height: 156%;
+    letter-spacing: 0.025em;
+
+    color: $defaultWhite;
+  }
+
+  &__button-icon {
+    width: 50.91px;
+    height: 47.09px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    background-color: $defaultWhite;
+
+    border-radius: 50%;
+  }
+}

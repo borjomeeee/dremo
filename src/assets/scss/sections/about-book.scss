@@ -1,0 +1,62 @@
+@mixin content {
+  .content {
+    &__title {
+      font-weight: 500;
+      font-size: 40px;
+
+      line-height: 149%;
+      letter-spacing: 0.025em;
+    }
+
+    &__descr {
+      margin-top: 38px;
+
+      font-size: 16px;
+      line-height: 171%;
+
+      letter-spacing: 0.025em;
+
+      p {
+        margin-top: 22px;
+      }
+    }
+
+    &__button {
+        margin-top: 64px;
+    }
+  }
+}
+
+.about-book {
+  margin-top: 150px;
+
+  display: grid;
+  grid-template-columns: auto minmax(350px, 654px);
+
+  //   align-items: center;
+  justify-content: center;
+
+  @include content;
+
+  &__content {
+    max-width: 604px;
+
+    margin-right: 80px;
+
+    padding: 0 30px;
+  }
+
+  &__picture {
+    position: relative;
+  }
+
+  &__front-picture {
+    position: absolute;
+
+    width: 228px;
+    height: 213px;
+
+    bottom: -24px;
+    left: -161px;
+  }
+}
