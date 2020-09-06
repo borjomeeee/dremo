@@ -1,5 +1,15 @@
 const selectsList = document.getElementsByClassName('finder__select-list')[0]
 
+const hideAllSelectOptions = () => {
+  const selectOptionsContainersOpened = selectsList.querySelectorAll(
+    '.select__options_opened'
+  )
+
+  for (let element of selectOptionsContainersOpened) {
+    element.classList.remove('select__options_opened')
+  }
+}
+
 const onClickSelect = event => {
   event.path.some(element => {
     if (element.classList.contains('finder__select-list')) {
@@ -16,6 +26,7 @@ const onClickSelect = event => {
       if (currSelectOptions.classList.contains('select__options_opened')) {
         currSelectOptions.classList.remove('select__options_opened')
       } else {
+        hideAllSelectOptions()
         currSelectOptions.classList.add('select__options_opened')
       }
 
