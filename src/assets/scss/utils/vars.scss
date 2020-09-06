@@ -2,17 +2,30 @@
   ========================================================================== */
 
 // Font
-$mainFont                : 'Montserrat', Helvetica, Arial, sans-serif;
+$mainFont: 'Poppins', 'Montserrat', Helvetica, Arial, sans-serif;
 
 // Size
-$mainFontColor           : #000;
-$mainFontSize            : 16px;
-$mainFontWeight          : 400;
-$mainLineHeight          : 1.4;
+$mainFontColor: #000;
+$mainFontSize: 16px;
+$mainFontWeight: 400;
+$mainLineHeight: 1.4;
 
-$desktopWidth            : 1280px;
-$smDesktopWidth          : 1024px;
-$tableWidth              : 768px;
-$smTableWidth            : 640px;
-$phoneWidth              : 480px;
-$smPhoneWidth            : 320px;
+$mediumWeight: 500;
+
+$desktopWidth: 1280px;
+$smDesktopWidth: 1024px;
+$tableWidth: 768px;
+$smTableWidth: 640px;
+$phoneWidth: 480px;
+$smPhoneWidth: 320px;
+
+// Colors
+$defaultWhite: #fff;
+$defaultBlack: #000;
+$defaultGray: #656565;
+
+$mediumBlack: #2C3131;
+$mediumGray: rgba(0, 0, 0, 0.5);
+
+
+$defaultBlue: #4270C9;

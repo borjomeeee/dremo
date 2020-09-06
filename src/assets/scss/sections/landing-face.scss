@@ -1,0 +1,198 @@
+.landing-face {
+  height: 100vh;
+
+  .header {
+    display: block;
+    position: fixed;
+
+    top: 0;
+
+    width: 100vw;
+
+    padding: 0px 50px;
+
+    height: 140px;
+
+    z-index: 1000;
+
+    &__container {
+      display: flex;
+
+      align-items: center;
+      justify-content: space-between;
+
+      height: 100%;
+
+      background-color: $defaultWhite;
+    }
+
+    &__logo {
+      font-size: 36px;
+      font-weight: $mediumWeight;
+
+      color: $defaultBlue;
+
+      &-black {
+        color: $defaultBlack;
+      }
+    }
+
+    &__nav {
+      display: flex;
+    }
+
+    &__nav-item {
+      color: $mediumBlack;
+
+      padding: 12px 25px;
+
+      border-radius: 30px;
+
+      transition: all 0.2s;
+      &:hover,
+      &_selected {
+        background-color: $defaultBlue;
+        color: $defaultWhite;
+      }
+    }
+
+    &__nav-link:not(:last-child) {
+      margin-right: 5px;
+    }
+  }
+
+  .top-part {
+    margin-top: 200px;
+    margin-bottom: 34px;
+
+    &__container {
+      display: flex;
+      flex-direction: column;
+
+      align-items: center;
+      justify-content: center;
+    }
+
+    &__title {
+      max-width: 800px;
+
+      font-size: 64px;
+      line-height: 77px;
+
+      font-weight: $mediumWeight;
+
+      text-align: center;
+
+      &_blue {
+        color: $defaultBlue;
+      }
+    }
+
+    &__descr {
+      margin-top: 33px;
+
+      font-size: 24px;
+      font-weight: 300;
+
+      color: $defaultGray;
+    }
+
+    &__descr-link {
+      text-decoration: underline;
+    }
+  }
+
+  .bottom-part {
+    background: url('../img/landing-face-bg.png') center top no-repeat;
+    background-size: cover;
+
+    height: 640px;
+
+    margin-bottom: 80px;
+
+    &__container {
+      height: 100%;
+
+      display: flex;
+
+      align-items: flex-end;
+      justify-content: center;
+    }
+
+    .finder {
+      display: grid;
+      grid-template-columns: 1fr auto;
+
+      padding: 0 62px 0 80px;
+
+      width: 768px;
+      height: 108px;
+
+      justify-content: space-around;
+      align-items: center;
+
+      background-color: $defaultWhite;
+
+      border-radius: 60px;
+
+      box-shadow: 0px 4px 100px rgba(0, 0, 0, 0.15);
+
+      transform: translateY(80px);
+
+      .select {
+        display: flex;
+
+        align-items: center;
+        justify-content: space-between;
+
+        margin-right: 97px;
+
+        &__col {
+          display: flex;
+        }
+
+        &__col-content {
+          position: relative;
+        }
+
+        &__options {
+          position: absolute;
+          display: none;
+        }
+
+        &__label {
+          font-weight: 500;
+          font-size: 16px;
+
+          cursor: pointer;
+        }
+
+        &__icon {
+          margin-left: 17px;
+        }
+
+        &__value {
+          margin-top: 10px;
+
+          color: $mediumGray;
+        }
+      }
+
+      &__search {
+        width: 54px;
+        height: 54px;
+
+        display: flex;
+
+        align-items: center;
+        justify-content: center;
+
+        background-color: $defaultBlue;
+
+        border-radius: 10px;
+
+        cursor: pointer;
+      }
+    }
+  }
+}
