@@ -148,18 +148,40 @@
         margin-right: 97px;
 
         .select {
-          display: flex;
+          position: relative;
 
-          &__content {
-            position: relative;
-          }
+          display: flex;
 
           &__options {
             position: absolute;
+
+            top: 30px;
+            left: 10px;
+
+            width: 200px;
+
             display: none;
 
+            background-color: #fff;
+
+            box-shadow: 0px 4px 100px rgba(0, 0, 0, 0.15);
+
+            cursor: pointer;
+
+            z-index: 1000;
+
             &_opened {
-              display: block;
+              display: flex;
+              flex-direction: column;
+            }
+          }
+
+          &__option-item {
+            align-self: stretch;
+            padding: 10px 20px;
+
+            &:hover {
+              background-color: $lightGray;
             }
           }
 
