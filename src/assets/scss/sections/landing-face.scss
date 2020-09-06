@@ -139,7 +139,7 @@
 
       transform: translateY(80px);
 
-      .select {
+      &__select-list {
         display: flex;
 
         align-items: center;
@@ -147,34 +147,38 @@
 
         margin-right: 97px;
 
-        &__col {
+        .select {
           display: flex;
-        }
 
-        &__col-content {
-          position: relative;
-        }
+          &__content {
+            position: relative;
+          }
 
-        &__options {
-          position: absolute;
-          display: none;
-        }
+          &__options {
+            position: absolute;
+            display: none;
 
-        &__label {
-          font-weight: 500;
-          font-size: 16px;
+            &_opened {
+              display: block;
+            }
+          }
 
-          cursor: pointer;
-        }
+          &__label {
+            font-weight: 500;
+            font-size: 16px;
 
-        &__icon {
-          margin-left: 17px;
-        }
+            cursor: pointer;
+          }
 
-        &__value {
-          margin-top: 10px;
+          &__icon {
+            margin-left: 17px;
+          }
 
-          color: $mediumGray;
+          &__value {
+            margin-top: 10px;
+
+            color: $mediumGray;
+          }
         }
       }
 
