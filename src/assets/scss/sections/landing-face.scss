@@ -1,6 +1,4 @@
 .landing-face {
-  height: 100vh;
-
   .header {
     display: block;
     position: fixed;
@@ -13,6 +11,8 @@
 
     height: 140px;
 
+    background-color: $defaultWhite;
+
     z-index: 1000;
 
     &__container {
@@ -22,8 +22,6 @@
       justify-content: space-between;
 
       height: 100%;
-
-      background-color: $defaultWhite;
     }
 
     &__logo {
@@ -139,6 +137,8 @@
 
       transform: translateY(80px);
 
+      z-index: 2;
+
       &__select-list {
         display: flex;
 
@@ -166,9 +166,9 @@
 
             box-shadow: 0px 4px 100px rgba(0, 0, 0, 0.15);
 
-            cursor: pointer;
-
             z-index: 1000;
+
+            cursor: pointer;
 
             &_opened {
               display: flex;
