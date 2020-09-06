@@ -3,7 +3,6 @@ const selectsList = document.getElementsByClassName('finder__select-list')[0]
 const onClickSelect = event => {
   event.path.some(element => {
     if (element.classList.contains('finder__select-list')) {
-      event.stopPropagation()
       return true
     }
 
@@ -20,7 +19,6 @@ const onClickSelect = event => {
         currSelectOptions.classList.add('select__options_opened')
       }
 
-      event.stopPropagation()
       return true
     }
 
@@ -36,11 +34,11 @@ const onClickSelect = event => {
       )
 
       currSelectOptions.classList.remove('select__options_opened')
-
-      event.stopPropagation()
       return true
     }
   })
+
+  event.stopPropagation()
 }
 
 const onClickSelectOptionsOutside = event => {
