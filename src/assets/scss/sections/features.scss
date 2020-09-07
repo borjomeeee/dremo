@@ -6,6 +6,8 @@
 
     background-color: $defaultWhite;
 
+    border-radius: 5px;
+
     &__image {
       height: 173px;
     }
@@ -55,12 +57,13 @@
     &__footer {
       display: flex;
 
-      align-items: center;
+      align-items: flex-end;
       justify-content: space-between;
     }
 
     &__position {
       margin-left: 15px;
+      margin-bottom: 12px;
 
       display: flex;
 
@@ -127,12 +130,6 @@
     &_third {
       right: -164px;
       top: -337px;
-
-      .card__image {
-        transform: rotate(-1.08deg);
-      }
-
-      transform: rotate(1.08deg);
     }
   }
 

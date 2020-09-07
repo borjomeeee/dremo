@@ -1,5 +1,7 @@
 @mixin verticalIndicator {
   .vertical-indicator {
+    position: relative;
+
     display: flex;
     flex-direction: column;
 
@@ -16,6 +18,9 @@
     }
 
     &__scroll-bar {
+      position: relative;
+      top: -1px;
+      
       margin: 0 auto;
 
       width: 1px;
@@ -56,6 +61,8 @@
       position: relative;
 
       width: 100%;
+
+      border-radius: 5px;
     }
 
     &__image {
@@ -102,7 +109,6 @@
       color: $stepDescr;
     }
   }
-
 }
 
 .work-steps {
