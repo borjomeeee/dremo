@@ -1,0 +1,170 @@
+@mixin card {
+  .card {
+    position: relative;
+
+    width: 242px;
+
+    background-color: $defaultWhite;
+
+    &__image {
+      height: 173px;
+    }
+
+    &__feature-icon {
+      svg {
+        width: 22px;
+        height: 22px;
+      }
+    }
+
+    &__content {
+      padding: 20px;
+    }
+
+    &__title {
+      font-weight: 500;
+    }
+
+    &__features-list {
+      width: 100%;
+
+      margin-top: 10px;
+
+      display: flex;
+      justify-content: space-between;
+    }
+
+    &__feature-item {
+      display: flex;
+
+      align-items: center;
+
+      font-size: 11px;
+    }
+
+    &__feature-icon {
+      margin-right: 10px;
+    }
+
+    &__feature-value {
+      &_blue {
+        color: $defaultBlue;
+      }
+    }
+
+    &__footer {
+      display: flex;
+
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    &__position {
+      margin-left: 15px;
+
+      display: flex;
+
+      align-items: center;
+    }
+
+    &__position-icon {
+      width: 22px;
+      height: 22px;
+    }
+
+    &__position-text {
+      margin-left: 5px;
+
+      font-size: 10px;
+    }
+
+    &__show-all {
+      width: 70px;
+      height: 30px;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      background-color: $defaultBlue;
+      color: $defaultWhite;
+
+      border-radius: 2.5px 0px 5px;
+    }
+  }
+}
+
+.features {
+  margin-top: 191px;
+
+  &__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+
+    justify-content: space-around;
+  }
+
+  &__cards-container {
+    padding: 0px 120px;
+
+    height: 534px;
+  }
+
+  @include card;
+
+  &__card {
+    filter: drop-shadow(0px 4px 100px rgba(0, 0, 0, 0.25));
+
+    &_first {
+      z-index: 2;
+    }
+    &_second {
+      top: -80px;
+      left: -120px;
+    }
+
+    &_third {
+      right: -164px;
+      top: -337px;
+
+      .card__image {
+        transform: rotate(-1.08deg);
+      }
+
+      transform: rotate(1.08deg);
+    }
+  }
+
+  &__title {
+    font-size: 40px;
+    font-weight: 500;
+
+    line-height: 146.19%;
+
+    color: $defaultBlack;
+  }
+
+  &__content {
+    min-width: 412px;
+
+    margin-left: 100px;
+  }
+
+  &__descr {
+    margin-top: 16px;
+
+    font-size: 18px;
+    line-height: 168.19%;
+
+    color: $featuresDescr;
+
+    p {
+      margin-top: 22px;
+    }
+  }
+
+  &__more {
+    margin-top: 64px;
+  }
+}

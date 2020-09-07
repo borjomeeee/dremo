@@ -1,32 +1,4 @@
 .common {
-  &__button {
-    padding: 13px 18px;
-
-    display: inline-flex;
-    
-    align-items: center;
-
-    background-color: $defaultBlue;
-
-    border-radius: 60px;
-
-    box-shadow: 4px 20px 32px $commonButtonShadow;
-
-    &_left {
-        justify-content: flex-start;
-    }
-
-    &_right {
-        justify-content: flex-end;
-
-        padding-left: 33px;
-
-        .common__button-text {
-            margin-right: 10px;
-        }
-    }
-  }
-
   &__button-text {
     font-size: 18px;
     font-weight: 500;
@@ -49,5 +21,73 @@
     background-color: $defaultWhite;
 
     border-radius: 50%;
+  }
+
+  &__button {
+    padding: 13px 18px;
+
+    display: inline-flex;
+
+    align-items: center;
+
+    background-color: $defaultBlue;
+
+    border-radius: 60px;
+
+    box-shadow: 4px 20px 32px $commonButtonShadow;
+
+    &_left {
+      justify-content: flex-start;
+    }
+
+    &_right {
+      justify-content: flex-end;
+
+      padding-left: 33px;
+
+      .common__button-text {
+        margin-right: 10px;
+      }
+    }
+
+    &_primary {
+      transition: all .2s;
+      background-color: $defaultWhite;
+
+      border: 1px solid $defaultBlack;
+
+      &:hover {
+        background-color: $defaultBlue;
+        border: none;
+
+        .common__button {
+          &-text {
+            color: $defaultWhite;
+          }
+  
+          &-icon {
+            background-color: $defaultWhite;
+  
+            svg {
+              fill: $defaultBlue;
+            }
+          }
+        }
+      }
+
+      .common__button {
+        &-text {
+          color: $defaultBlue;
+        }
+
+        &-icon {
+          background-color: $defaultBlue;
+
+          svg {
+            fill: $defaultWhite;
+          }
+        }
+      }
+    }
   }
 }
