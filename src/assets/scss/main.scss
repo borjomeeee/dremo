@@ -2,6 +2,7 @@
 @import 'utils/mixins';
 @import 'utils/fonts';
 @import 'utils/reset';
+@import "./utils/libs.scss";
 
 * {
   color: inherit;
@@ -86,3 +87,4 @@ li {
 @import './sections/about-book.scss';
 @import './sections/features.scss';
 @import './sections/about-video.scss';
+@import './sections/reviews.scss';

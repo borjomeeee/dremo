@@ -51,23 +51,23 @@
     }
 
     &_primary {
-      transition: all .2s;
+      transition: all 0.2s;
       background-color: $defaultWhite;
 
       border: 1px solid $defaultBlack;
 
       &:hover {
         background-color: $defaultBlue;
-        border: none;
+        border: 1px solid transparent;
 
         .common__button {
           &-text {
             color: $defaultWhite;
           }
-  
+
           &-icon {
             background-color: $defaultWhite;
-  
+
             svg {
               fill: $defaultBlue;
             }
@@ -88,6 +88,20 @@
           }
         }
       }
+    }
+  }
+
+  &__star {
+    width: 10px;
+    height: 10px;
+
+    svg {
+      width: 100%;
+      height: 100%;
+    }
+
+    &_trimed {
+      clip-path: inset(0 50% 0 0);
     }
   }
 }

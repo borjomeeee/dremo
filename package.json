@@ -45,6 +45,8 @@
     "webpack-merge": "^5.0.9"
   },
   "dependencies": {
-    "plyr": "^3.6.2"
+    "jquery": "^3.5.1",
+    "plyr": "^3.6.2",
+    "slick-carousel": "^1.8.1"
   }
 }
