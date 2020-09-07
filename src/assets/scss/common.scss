@@ -34,7 +34,7 @@
 
     border-radius: 60px;
 
-    box-shadow: 4px 20px 32px $commonButtonShadow;
+    box-shadow: 4px 20px 32px $commonButtonShadow;  
 
     &_left {
       justify-content: flex-start;
@@ -55,6 +55,8 @@
       background-color: $defaultWhite;
 
       border: 1px solid $defaultBlack;
+
+      box-shadow: none;
 
       &:hover {
         background-color: $defaultBlue;
