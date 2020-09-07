@@ -1,0 +1,23 @@
+.about-video {
+    margin-top: 150px;
+
+    &__container {
+        position: relative;
+
+        display: flex;
+
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__component {
+        width: 1034px;
+    }
+
+    &__icon {
+        position: absolute;
+
+        left: -190px;
+        bottom: -86px;
+    }
+}

@@ -75,6 +75,14 @@ module.exports = {
         }
       },
       {
+        // video
+        test: /\.(mp4)$/,
+        loader: 'file-loader',
+        options: {
+          name: '[name].[ext]'
+        }
+      },
+      {
         // scss
         test: /\.scss$/,
         use: [
@@ -121,7 +129,7 @@ module.exports = {
   resolve: {
     alias: {
       '~': PATHS.src, // Example: import Dog from "~/assets/img/dog.jpg"
-      '@': `${PATHS.src}/js`, // Example: import Sort from "@/utils/sort.js"
+      '@': `${PATHS.src}/js` // Example: import Sort from "@/utils/sort.js"
     }
   },
   plugins: [
@@ -139,6 +147,11 @@ module.exports = {
         {
           from: `${PATHS.src}/${PATHS.assets}fonts`,
           to: `${PATHS.assets}fonts`
+        },
+        // Video:
+        {
+          from: `${PATHS.src}/${PATHS.assets}video`,
+          to: `${PATHS.assets}video`
         },
         // Static (copy to '/'):
         {
