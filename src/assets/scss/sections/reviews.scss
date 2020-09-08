@@ -113,13 +113,12 @@
   }
 
   &__pictures {
-    display: flex;
+    display: grid;
+    grid-template-columns: minmax(auto, 239px) minmax(auto, 353px);
   }
 
   &__back-image {
     margin-top: 230px;
-
-    width: 239px;
 
     border-radius: 5px;
   }
@@ -127,8 +126,6 @@
   &__front-image {
     margin-top: 70px;
     margin-left: 55px;
-
-    width: 353px;
 
     border-radius: 5px;
   }
