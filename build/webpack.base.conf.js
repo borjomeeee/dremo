@@ -63,6 +63,7 @@ module.exports = {
         test: /\.(woff(2)?|ttf|eot|svg)(\?v=\d+\.\d+\.\d+)?$/,
         loader: 'file-loader',
         options: {
+          outputPath: './assets/fonts',
           name: '[name].[ext]'
         }
       },
@@ -71,6 +72,7 @@ module.exports = {
         test: /\.(png|jpg|gif|svg)$/,
         loader: 'file-loader',
         options: {
+          outputPath: './assets/img',
           name: '[name].[ext]'
         }
       },
@@ -79,6 +81,7 @@ module.exports = {
         test: /\.(mp4)$/,
         loader: 'file-loader',
         options: {
+          outputPath: './assets/video',
           name: '[name].[ext]'
         }
       },
