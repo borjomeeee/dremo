@@ -34,10 +34,14 @@
 
     border-radius: 60px;
 
-    box-shadow: 4px 20px 32px $commonButtonShadow;  
-
     &_left {
       justify-content: flex-start;
+
+      padding-right: 33px;
+
+      .common__button-text {
+        margin-left: 10px;
+      }
     }
 
     &_right {
@@ -55,8 +59,6 @@
       background-color: $defaultWhite;
 
       border: 1px solid $defaultBlack;
-
-      box-shadow: none;
 
       &:hover {
         background-color: $defaultBlue;

@@ -5,6 +5,7 @@
 @import "./utils/libs.scss";
 
 * {
+  font-family: $mainFont;
   color: inherit;
 }
 
@@ -88,3 +89,4 @@ li {
 @import './sections/features.scss';
 @import './sections/about-video.scss';
 @import './sections/reviews.scss';
+@import "./sections/question.scss";
