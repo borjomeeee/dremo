@@ -1,0 +1,126 @@
+@mixin nav {
+  .nav {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    column-gap: 65px;
+
+    &__links-list {
+      display: flex;
+      flex-direction: column;
+    }
+
+    &__col:first-child {
+      .nav__title::after {
+        content: '';
+        display: block;
+
+        position: absolute;
+
+        bottom: -3px;
+        left: 0px;
+
+        width: 36px;
+        height: 2px;
+
+        background-color: $defaultBlue;
+      }
+    }
+
+    &__title {
+      position: relative;
+
+      font-weight: 500;
+      font-size: 20px;
+
+      line-height: 30px;
+      letter-spacing: 0.025em;
+
+      color: $footerNavTitle;
+    }
+
+    &__links-list {
+      margin-top: 30px;
+    }
+
+    &__link {
+      font-size: 16px;
+      line-height: 24px;
+
+      letter-spacing: 0.025em;
+
+      color: $footerNavItem;
+
+      &:not(:first-child) {
+        margin-top: 14px;
+      }
+    }
+  }
+}
+
+.footer {
+  margin-top: 200px;
+
+  &__content {
+    display: grid;
+    grid-template-columns: 2fr 4fr;
+
+    justify-content: center;
+  }
+
+  &__right-container {
+    justify-self: flex-end;
+
+    background-color: $defaultWhite;
+
+    padding-top: 20px;
+    padding-right: 88px;
+    
+  }
+
+  &__social-list {
+    display: grid;
+
+    grid-template-columns: repeat(4, auto);
+    column-gap: 15px;
+
+    align-items: center;
+  }
+
+  &__left-container {
+    padding-top: 20px;
+    padding-left: 120px;
+    padding-bottom: 74px;
+
+    display: flex;
+    align-items: center;
+
+    background-color: #f2f2f2;
+  }
+
+  @include nav;
+
+  &__nav {
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  &__picture {
+    margin-left: 70px;
+  }
+
+  &__bottom-line {
+      height: 82px;
+
+      display: flex;
+
+      align-items: center;
+      justify-content: center;
+  }
+
+  &__copy {
+    font-size: 14px;
+    line-height: 21px;
+    
+    color: rgba($defaultBlack, 0.5);
+  }
+}

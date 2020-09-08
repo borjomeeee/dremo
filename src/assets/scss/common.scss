@@ -1,4 +1,15 @@
 .common {
+  &__logo {
+    font-size: 36px;
+    font-weight: $mediumWeight;
+
+    color: $defaultBlue;
+
+    &-black {
+      color: $defaultBlack;
+    }
+  }
+
   &__button-text {
     font-size: 18px;
     font-weight: 500;
