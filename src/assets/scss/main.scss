@@ -33,6 +33,8 @@ body {
   font-weight: $mainFontWeight;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  overflow-x: hidden;
 }
 
 *,
@@ -91,3 +93,6 @@ li {
 @import './sections/reviews.scss';
 @import "./sections/question.scss";
 @import "./sections/footer.scss";
+
+// Media
+@import "./utils/media.scss";

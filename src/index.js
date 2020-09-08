@@ -5,3 +5,4 @@ import './assets/scss/main.scss'
 import "./js/select";
 import "./js/video";
 import "./js/comments";
+import "./js/menu";

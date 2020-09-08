@@ -1,0 +1,298 @@
+@media only screen and (max-width: 1240px) {
+  .about-book {
+    &__front-picture {
+      display: none;
+    }
+  }
+}
+
+@media only screen and (max-width: 1150px) {
+  .reviews {
+    &__pictures {
+      display: block;
+    }
+
+    &__back-image {
+      display: none;
+    }
+  }
+}
+
+@media only screen and (max-width: 1080px) {
+  .reviews {
+    &__pictures {
+      display: block;
+    }
+
+    &__back-image {
+      display: none;
+    }
+  }
+
+  .work-steps {
+    &__steps-list {
+      display: flex;
+      flex-wrap: wrap;
+
+      justify-content: center;
+    }
+
+    &__step {
+      margin-top: 40px;
+      margin-right: 20px !important;
+      margin-left: 20px;
+    }
+
+    .vertical-indicator {
+      display: none;
+    }
+  }
+}
+
+@media only screen and (max-width: $smDesktopWidth) {
+  .landing-face {
+    .header {
+      &__nav {
+        display: none;
+      }
+
+      &__menu-icon {
+        display: block;
+      }
+    }
+  }
+  .features {
+    margin-top: 50px;
+
+    &__container {
+      display: block;
+    }
+
+    &__cards-container {
+      padding: 0;
+
+      height: auto;
+
+      display: flex;
+      flex-wrap: wrap;
+
+      align-items: center;
+      justify-content: space-around;
+    }
+
+    &__content {
+      margin-top: 65px;
+    }
+
+    &__card {
+      top: 0px;
+      left: 0px;
+
+      margin: 20px;
+    }
+  }
+
+  .about-book {
+    margin-top: 75px;
+
+    display: flex;
+    justify-content: center;
+
+    &__picture {
+      display: none;
+    }
+
+    &__content {
+      padding: 0 30px;
+      margin: 0;
+    }
+  }
+
+  .reviews {
+    &__front-image {
+      display: none;
+    }
+
+    &__footer {
+      margin-left: 0;
+    }
+  }
+
+  .question {
+    &__content {
+      width: auto;
+    }
+  }
+
+  .footer {
+    &__content {
+      grid-template-columns: auto 4fr;
+    }
+
+    &__right-container {
+      padding-left: 30px;
+    }
+
+    &__left-container {
+      padding-left: 40px;
+    }
+
+    &__picture {
+      display: none;
+    }
+  }
+}
+
+@media only screen and (max-width: 840px) {
+  .footer {
+    margin-top: 100px;
+
+    &__content {
+      display: block;
+    }
+
+    &__right-container {
+      padding: 0 20px;
+      margin-bottom: 20px;
+
+      display: flex;
+      flex-direction: column;
+
+      align-items: center;
+      justify-content: center;
+    }
+
+    &__left-container {
+      padding: 20px;
+
+      display: flex;
+
+      justify-content: center;
+    }
+  }
+
+  .features {
+    &__content {
+      margin-left: 0;
+
+      min-width: 320px;
+    }
+  }
+}
+
+@media only screen and (max-width: $tableWidth) {
+  .landing-face {
+    .top-part {
+      &__title {
+        font-size: 48px;
+      }
+    }
+
+    .bottom-part {
+      .finder {
+        padding: 50px;
+        width: auto;
+        height: auto;
+
+        display: block;
+
+        &__select-list {
+          display: block;
+        }
+
+        &__select:not(:first-child) {
+          margin-top: 20px;
+        }
+
+        &__search {
+          margin-top: 30px;
+
+          width: 100%;
+        }
+
+        &__select-list {
+          width: 100%;
+          margin-right: 0;
+        }
+      }
+    }
+  }
+
+  .question {
+    &__content {
+      flex-direction: column;
+    }
+
+    &__submit {
+      margin-top: 30px;
+    }
+
+    &__title {
+      font-size: 48px;
+    }
+  }
+}
+
+@media only screen and (max-width: 540px) {
+  .reviews {
+    &__wrapper {
+      display: block;
+    }
+
+    &__text-container {
+      // margin-left: 0;
+    }
+
+    &__content {
+      margin-left: 0;
+    }
+
+    .comment {
+      max-width: 280px;
+      margin: 0 20px 35px;
+    }
+
+    &__comment-list {
+      max-width: 320px;
+
+      // margin: 0 auto;
+      margin-top: 100px;
+    }
+
+    .switcher {
+      display: none;
+    }
+  }
+
+  .features__content {
+    min-width: 0;
+  }
+
+  .footer {
+      .nav {
+          display: block;
+
+          &__col:not(:first-child) {
+              margin-top: 20px;
+          }
+      }
+  }
+}
+
+@media only screen and (max-width: $phoneWidth) {
+  .landing-face {
+    .top-part {
+      margin-top: 150px;
+      &__title {
+        font-size: 32px;
+        line-height: 38px;
+      }
+    }
+  }
+
+  .question {
+      &__title {
+          font-size: 32px;
+      }
+  }
+}

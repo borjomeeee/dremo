@@ -120,3 +120,75 @@
     }
   }
 }
+
+.mobile-menu {
+  display: none;
+
+  position: fixed;
+
+  padding: 20px;
+
+  top: 0;
+  left: 0;
+  right: 0;
+
+  height: 100vh;
+  max-height: 100vh;
+
+  color: $mediumBlack;
+  background-color: $defaultWhite;
+
+  animation: openMenu 0.4s;
+
+  z-index: 1000;
+
+  &_opened {
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+  }
+
+  &__close {
+    color: $mediumBlack;
+    font-size: 24px;
+
+    display: inline;
+    margin-left: auto;
+
+    cursor: pointer;
+  }
+
+  &__nav {
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__nav-link {
+    padding: 12px 25px;
+
+    border-radius: 30px;
+
+    transition: all 0.2s;
+
+    &:hover,
+    &_selected {
+      background-color: $defaultBlue;
+      color: $defaultWhite;
+    }
+  }
+}
+
+@keyframes openMenu {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}

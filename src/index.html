@@ -6,6 +6,7 @@
       <title>Document</title>
    </head>
    <body>
+
       <section id="landing-face" class="landing-face">
          <div class="landing-face__header header">
             <div class="header__container">
@@ -34,6 +35,7 @@
                      ><span class="header__nav-item">Sign in</span></a
                      >
                </div>
+               <i id="menu-icon" class="fas fa-bars fa-lg header__menu-icon"></i>
             </div>
          </div>
          <div class="landing-face__content">
@@ -642,12 +644,14 @@
             <div class="question__descr">With a library of configurable features that conform to the Manufacturing
                and cost effectively.</div>
 
-            <form class="question__input-container">
-               <div class="question__input-icon">
-                  <img src="./assets/img/email-icon.png" alt="Email">
-               </div>
-               <div class="question__input">
-                  <input type="text" placeholder="Enter Your email address ">
+            <form class="question__content">
+               <div class="question__input-container">
+                  <div class="question__input-icon">
+                     <img src="./assets/img/email-icon.png" alt="Email">
+                  </div>
+                  <div class="question__input">
+                     <input type="text" placeholder="Enter Your email address ">
+                  </div>
                </div>
                <button type="submit" class="common__button common__button_left question__submit">
                   <div class="common__button-icon">
@@ -657,7 +661,8 @@
                   </div>
                   <div class="common__button-text">Subrcribe Now</div>
                </button>
-            </div>
+            </form>
+
          </div>
       </section>
 
@@ -741,5 +746,30 @@
          </div>
 
       </section>
+
+      <div id="mobile-menu" class="mobile-menu">
+         <i id="menu-close-icon" class="fas fa-times mobile-menu__close"></i>
+   
+         <div class="mobile-menu__nav">
+           <a href="#" class="mobile-menu__nav-link">
+             <div class="mobile-menu__nav-item">Home</div>
+           </a>
+           <a href="#" class="mobile-menu__nav-link">
+             <div class="mobile-menu__nav-item">Find Home</div>
+           </a>
+           <a href="#" class="mobile-menu__nav-link">
+             <div class="mobile-menu__nav-item">About as</div>
+           </a>
+           <a href="#" class="mobile-menu__nav-link">
+            <div class="mobile-menu__nav-item">Location</div>
+          </a>
+          <a href="#" class="mobile-menu__nav-link">
+            <div class="mobile-menu__nav-item">Reviews</div>
+          </a>
+          <a href="#" class="mobile-menu__nav-link">
+            <div class="mobile-menu__nav-item">Sign in</div>
+          </a>
+         </div>
+      </div>
    </body>
 </html>

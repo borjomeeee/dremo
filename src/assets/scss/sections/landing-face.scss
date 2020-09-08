@@ -39,6 +39,11 @@
     &__nav-link:not(:last-child) {
       margin-right: 5px;
     }
+
+    &__menu-icon {
+      display: none;
+      cursor: pointer;
+    }
   }
 }
 
@@ -74,6 +79,8 @@
       font-weight: 300;
 
       color: $defaultGray;
+
+      text-align: center;
     }
 
     &__descr-link {
