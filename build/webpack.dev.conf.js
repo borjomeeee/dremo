@@ -12,11 +12,14 @@ const devWebpackConfig = merge(baseWebpackConfig, {
   devtool: 'cheap-module-eval-source-map',
   devServer: {
     contentBase: baseWebpackConfig.externals.paths.dist,
-    port: 8081,
+    port: 9000,
     overlay: {
       warnings: true,
       errors: true
     }
+  },
+  output: {
+    publicPath: '/',
   },
   plugins: [
     new webpack.SourceMapDevToolPlugin({
