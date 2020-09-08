@@ -238,11 +238,7 @@
     &__wrapper {
       display: block;
     }
-
-    &__text-container {
-      // margin-left: 0;
-    }
-
+    
     &__content {
       margin-left: 0;
     }
@@ -253,10 +249,9 @@
     }
 
     &__comment-list {
-      max-width: 320px;
-
-      // margin: 0 auto;
       margin-top: 100px;
+
+      max-width: 320px;
     }
 
     .switcher {
@@ -269,13 +264,13 @@
   }
 
   .footer {
-      .nav {
-          display: block;
+    .nav {
+      display: block;
 
-          &__col:not(:first-child) {
-              margin-top: 20px;
-          }
+      &__col:not(:first-child) {
+        margin-top: 20px;
       }
+    }
   }
 }
 
@@ -291,8 +286,8 @@
   }
 
   .question {
-      &__title {
-          font-size: 32px;
-      }
+    &__title {
+      font-size: 32px;
+    }
   }
 }
